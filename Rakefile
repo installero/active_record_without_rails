@@ -42,7 +42,7 @@ namespace :db do
     else
       generator_params = [name]
     end
-    Rails::Generators.invoke "active_record:migration", generator_params, :destination_root => DatabaseTasks.migrations_paths
+    Rails::Generators.invoke "active_record:migration", generator_params
   end
 end
 
